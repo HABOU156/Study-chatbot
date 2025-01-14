@@ -41,17 +41,15 @@ StudyBot est un chatbot intelligent conçu pour aider les étudiants dans leur a
 - Tapez simplement votre question pour obtenir une réponse
 
 ### Exemple d'utilisation :
-```CSV
-  Vous : Qu'est-ce que l'IA ?
-  StudyBot : L'intelligence artificielle (IA) est la simulation de l'intelligence humaine par des machines, en particulier des systèmes informatiques.
-  Vous : upload
-  Entrez votre texte (tapez 'END' pour terminer) :
-  L'eau est une ressource précieuse qu'il faut préserver.
-  La pollution de l'eau est un problème majeur dans notre société.
-  END
-  Vous : Quel est le problème majeur mentionné ?
-  StudyBot : La pollution de l'eau est un problème majeur dans notre société.
-
+     Vous : Qu'est-ce que l'IA ?
+     StudyBot : L'intelligence artificielle (IA) est la simulation de l'intelligence humaine par des machines, en particulier des systèmes informatiques.
+     Vous : upload
+     Entrez votre texte (tapez 'END' pour terminer) :
+     L'eau est une ressource précieuse qu'il faut préserver.
+     La pollution de l'eau est un problème majeur dans notre société.
+     END
+     Vous : Quel est le problème majeur mentionné ?
+     StudyBot : La pollution de l'eau est un problème majeur dans notre société.
 ## Structure du projet
 
 - `main.py` : Point d'entrée du programme
