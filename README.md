@@ -25,13 +25,13 @@ cd Study-chatbot
 
 2. Installez les dépendances :
   ```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 ## Utilisation
 
 1. Lancez le bot :
    ```bash
-python main.py
+     python main.py
 
 2. Commandes disponibles :
 - `upload` : Pour ajouter un document à analyser
