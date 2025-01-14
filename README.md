@@ -19,18 +19,18 @@ StudyBot est un chatbot intelligent conçu pour aider les étudiants dans leur a
 ## Installation
 
 1. Clonez le dépôt :
-   bash
+   ```bash
 git clone [url-du-repo]
 cd Study-chatbot
 
 2. Installez les dépendances :
-  bash
+  ```bash
 pip install -r requirements.txt
 
 ## Utilisation
 
 1. Lancez le bot :
-   bash
+   ```bash
 python main.py
 
 2. Commandes disponibles :
@@ -39,6 +39,7 @@ python main.py
 - Tapez simplement votre question pour obtenir une réponse
 
 ### Exemple d'utilisation :
+```CSV
   Vous : Qu'est-ce que l'IA ?
   StudyBot : L'intelligence artificielle (IA) est la simulation de l'intelligence humaine par des machines, en particulier des systèmes informatiques.
   Vous : upload
