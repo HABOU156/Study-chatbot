@@ -1,11 +1,16 @@
+from transformers import pipeline
+import json
+
+
 class StudyBot:
     def __init__(self):
         # Initialiser le pipeline de questions-réponses
         self.qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
         self.faqs = self.load_faqs()
         self.current_context = ""
+        self.is_running = True
 
-    def load_faqs(self) -> Dict[str, str]:
+    def load_faqs(self) -> dict[str, str]:
         try:
             # Charger les FAQ (questions fréquemment posées) à partir d'un fichier JSON
             with open('faqs.json', 'r') as f:
@@ -46,3 +51,9 @@ class StudyBot:
         
         # Si aucune correspondance dans les FAQ, essayer de répondre en fonction du contexte
         return self.answer_from_context(question)
+
+    def stop(self):
+        """Arrêter proprement le bot et libérer les ressources"""
+        self.is_running = False
+        if hasattr(self, 'qa_pipeline'):
+            del self.qa_pipeline

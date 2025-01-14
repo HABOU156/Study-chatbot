@@ -2,31 +2,31 @@ from chatbot import StudyBot
 import sys
 
 def main():
-    print("Bienvenue sur StudyBot ! Tapez 'quit' pour quitter, 'upload' pour ajouter un document.")
+    print("Bienvenue sur StudyBot ! Tapez 'quit' ou 'END' pour quitter, 'upload' pour ajouter un document.")
     bot = StudyBot()
 
-    while True:
+    while bot.is_running:
         user_input = input("\nVous : ").strip()
         
-        if user_input.lower() == 'quit':
-            # Quitter le programme
+        if user_input.lower() in ['quit', 'end']:
+            bot.stop()
             print("Au revoir !")
             break
             
         elif user_input.lower() == 'upload':
-            # Permettre à l'utilisateur d'ajouter un document en tant que contexte
-            print("Entrez votre texte (tapez 'END' sur une nouvelle ligne pour terminer) :")
+            print("Entrez votre texte (tapez autre chose que 'END' pour terminer) :")
             text_lines = []
             while True:
                 line = input()
-                if line.strip() == 'END':
-                    break
+                if line.strip().lower() == 'end':
+                    bot.stop()
+                    print("Au revoir !")
+                    return
                 text_lines.append(line)
             bot.set_context('\n'.join(text_lines))
             print("Document téléchargé avec succès !")
             
         else:
-            # Obtenir une réponse à la question de l'utilisateur
             answer = bot.get_answer(user_input)
             print(f"StudyBot : {answer}")
 
