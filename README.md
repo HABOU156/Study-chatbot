@@ -1,31 +1,33 @@
 # Study-chatbot
-# StudyBot - Assistant d'Étude IA
+## StudyBot - Assistant d'Étude IA
 
 StudyBot est un chatbot intelligent conçu pour aider les étudiants dans leur apprentissage. Il peut répondre à des questions à partir d'une base de FAQ prédéfinie et analyser des documents fournis par l'utilisateur pour répondre à des questions spécifiques.
 
+---
+
 ## Fonctionnalités
 
-- Réponses aux questions fréquemment posées (FAQ)
-- Analyse de documents personnalisés
-- Interface en ligne de commande simple
-- Support du français
-- Utilisation du modèle DistilBERT pour l'analyse de texte
+- **Réponses aux questions fréquemment posées (FAQ)**
+- **Analyse de documents personnalisés**
+- **Interface en ligne de commande simple**
+- **Support du français**
+- **Utilisation du modèle DistilBERT pour l'analyse de texte**
+
+---
 
 ## Prérequis
 
 - Python 3.8 ou supérieur
 - pip (gestionnaire de paquets Python)
 
+---
+
 ## Installation
 
 1. Clonez le dépôt :
    ```bash
-git clone [url-du-repo]
-cd Study-chatbot
-
-2. Installez les dépendances :
-  ```bash
-   pip install -r requirements.txt
+   git clone [url-du-repo]
+   cd Study-chatbot
 
 ## Utilisation
 
