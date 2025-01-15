@@ -55,17 +55,4 @@ StudyBot est un chatbot intelligent conçu pour aider les étudiants dans leur a
 - `main.py` : Point d'entrée du programme
 - `chatbot.py` : Classe principale du chatbot
 - `faqs.json` : Base de données des questions fréquentes
-- `requirements.txt` : Liste des dépendances
 
-## Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité
-3. Commiter vos changements
-4. Pousser vers la branche
-5. Ouvrir une Pull Request
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
